@@ -10,15 +10,17 @@ function App() {
   const technologiesRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="font-montserrat min-h-[200vh] px-8 bg-primary-dark text-gray-100 flex flex-col gap-8">
+    <div className="font-montserrat px-8 bg-primary-dark text-gray-100 flex flex-col gap-8 pb-24">
       <NavBar
         home={homeRef}
         projects={projectsRef}
         technologies={technologiesRef}
       />
-      <Header ref={homeRef} />
-      <Technologies ref={technologiesRef} />
-      <Projects ref={projectsRef} />
+      <main className="mx-auto max-w-[50rem]">
+        <Header ref={homeRef} />
+        <Technologies ref={technologiesRef} />
+        <Projects ref={projectsRef} />
+      </main>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react';
 import { RefT } from 'utils/types';
-
 export const Header = forwardRef((props, ref: RefT) => {
   return (
     <header className="pt-16" ref={ref}>
@@ -9,7 +8,7 @@ export const Header = forwardRef((props, ref: RefT) => {
         I'm Michał, <br />a Front End Developer
       </h1>
       <img
-        src="/images/background.jpg"
+        src="/assets/images/background.jpg"
         className="sm:w-3/4"
         alt="Header image"
       />
