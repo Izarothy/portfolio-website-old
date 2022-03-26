@@ -3,3 +3,9 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+@layer components {
+  .list-el {
+    @apply hover:border-b border-blue-500;
+  }
+}
