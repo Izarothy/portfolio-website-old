@@ -1,6 +1,6 @@
 import React, { forwardRef, RefObject } from 'react';
+import { RefT } from 'utils/types';
 
-type Ref = RefObject<HTMLDivElement> | null;
-export const Projects = forwardRef((props, ref: Ref) => {
+export const Projects = forwardRef((props, ref: RefT) => {
   return <section ref={ref}>Projects</section>;
 });

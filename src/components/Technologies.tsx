@@ -1,7 +1,7 @@
-import React, { forwardRef, RefObject } from 'react';
+import React, { forwardRef } from 'react';
+import { RefT } from 'utils/types';
 
-type Ref = RefObject<HTMLDivElement> | null;
-export const Technologies = forwardRef((props, ref: Ref) => {
+export const Technologies = forwardRef((props, ref: RefT) => {
   return (
     <section className="w-full" ref={ref}>
       Technologies

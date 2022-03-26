@@ -1,14 +1,15 @@
 import React from 'react';
+import { RefT } from 'utils/types';
 
 type Props = {
-  home: React.RefObject<HTMLElement>;
-  projects: React.RefObject<HTMLElement>;
-  technologies: React.RefObject<HTMLElement>;
+  home: RefT;
+  projects: RefT;
+  technologies: RefT;
 };
 
 export const NavBar = ({ home, projects, technologies }: Props) => {
   return (
-    <nav className="w-full flex justify-end pr-4 text-gray-400 fixed">
+    <nav className="w-full flex justify-end pr-8 text-gray-400 fixed text-sm">
       <ul className="flex gap-4 items-center">
         <li>
           <button
