@@ -11,7 +11,7 @@ export const Projects = forwardRef((props, ref: RefT) => {
       <div className="grid sm:grid-cols-2 gap-4">
         <Project
           title="Art Gallery"
-          bg="artgallery"
+          bg="art-gallery"
           live="https://art-gallery-tawerna.vercel.app/"
           github="https://github.com/Izarothy/art-gallery-tawerna"
         />

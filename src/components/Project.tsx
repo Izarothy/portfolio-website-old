@@ -10,7 +10,8 @@ export const Project = ({ title, bg, live, github }: Props) => {
   const [hovered, setHovered] = useState(false);
   return (
     <article
-      className={`h-80 bg-${bg} bg-cover rounded-sm relative`}
+      className={`h-80 bg-cover rounded-sm relative`}
+      style={{ backgroundImage: `url("assets/images/${bg}.png")` }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={() => setHovered(!hovered)}
