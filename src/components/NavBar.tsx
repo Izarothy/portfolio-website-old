@@ -9,7 +9,7 @@ type Props = {
 
 export const NavBar = ({ home, projects, technologies }: Props) => {
   return (
-    <nav className="w-full flex justify-end pr-8 text-gray-400 fixed text-sm">
+    <nav className="w-full flex justify-end pr-12 text-gray-300 fixed text-base bg-inherit py-3">
       <ul className="flex gap-4 items-center">
         <li>
           <button
