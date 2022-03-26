@@ -4,15 +4,24 @@ type Props = {
   bg: string;
   live: string;
   github: string;
+  title: string;
 };
-export const Project = ({ bg, live, github }: Props) => {
+export const Project = ({ title, bg, live, github }: Props) => {
   const [hovered, setHovered] = useState(false);
   return (
     <article
-      className={`hover:opacity-70 transform duration-300 ease-in-out h-80 bg-${bg} bg-cover rounded-sm`}
+      className={`h-80 bg-${bg} bg-cover rounded-sm relative`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={() => setHovered(!hovered)}
     >
+      <h3
+        className={`text-center w-full absolute top-20 text-3xl [text-shadow:1px_1px_#111] ${
+          hovered ? `block` : `hidden`
+        }`}
+      >
+        {title}
+      </h3>
       <span
         className={`${
           hovered ? `block` : `hidden`

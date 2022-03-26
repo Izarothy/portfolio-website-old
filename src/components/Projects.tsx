@@ -10,11 +10,13 @@ export const Projects = forwardRef((props, ref: RefT) => {
       </h3>
       <div className="grid sm:grid-cols-2 gap-4">
         <Project
+          title="Art Gallery"
           bg="artgallery"
           live="https://art-gallery-tawerna.vercel.app/"
           github="https://github.com/Izarothy/art-gallery-tawerna"
         />
         <Project
+          title="Blog App"
           bg="blogapp"
           live="https://blog-app-sooty.vercel.app/"
           github="https://github.com/Izarothy/blog-app"
