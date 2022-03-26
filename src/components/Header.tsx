@@ -8,6 +8,8 @@ export const Header = forwardRef((props, ref: RefT) => {
         I'm Michał, <br />a Front End Developer
       </h1>
       <img
+        width="280px"
+        height="190px"
         src="/assets/images/background.jpg"
         className="sm:w-3/4"
         alt="Header image"
