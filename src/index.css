@@ -11,4 +11,7 @@
   .tech-icons {
     @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4;
   }
+  .project-link {
+    @apply p-2 px-4 hover:bg-blue-400 transition ease-in-out duration-700 rounded-xl bg-blue-700 font-semibold;
+  }
 }
