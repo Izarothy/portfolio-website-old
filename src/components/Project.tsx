@@ -6,6 +6,7 @@ type Props = {
   github: string;
   title: string;
 };
+
 export const Project = ({ title, bg, live, github }: Props) => {
   const [hovered, setHovered] = useState(false);
   return (
