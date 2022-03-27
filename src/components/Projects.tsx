@@ -3,7 +3,7 @@ import { RefT } from 'utils/types';
 import { Project } from './Project';
 
 export const Projects = forwardRef((props, ref: RefT) => (
-  <section ref={ref}>
+  <section ref={ref} role="article">
     <h3 className="text-3xl text-center mt-8 font-bold mb-8">
       Notable Projects
     </h3>
