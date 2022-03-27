@@ -1,0 +1,12 @@
+{
+  "extends": ["wesbos/typescript"],
+  "rules": {
+    "react/display-name": "off", // Messes with forwardref components
+    "jsx-a11y/no-noninteractive-element-interactions": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}

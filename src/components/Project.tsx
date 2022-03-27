@@ -10,11 +10,12 @@ export const Project = ({ title, bg, live, github }: Props) => {
   const [hovered, setHovered] = useState(false);
   return (
     <article
-      className={`h-80 bg-cover rounded-sm relative`}
+      className="h-80 bg-cover rounded-sm relative"
       style={{ backgroundImage: `url("assets/images/${bg}.png")` }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={() => setHovered(!hovered)}
+      onKeyDown={() => setHovered(!hovered)}
     >
       <h3
         className={`text-center w-full absolute top-20 text-3xl [text-shadow:1px_1px_#111] ${
@@ -32,6 +33,7 @@ export const Project = ({ title, bg, live, github }: Props) => {
           href={live}
           target="_blank"
           className="p-2 px-4 hover:bg-white hover:text-primary-dark border border-white rounded-xl"
+          rel="noreferrer"
         >
           Live version
         </a>
@@ -39,6 +41,7 @@ export const Project = ({ title, bg, live, github }: Props) => {
           href={github}
           target="_blank"
           className="p-2 px-4 hover:bg-white hover:text-primary-dark border border-white rounded-xl"
+          rel="noreferrer"
         >
           Code
         </a>
