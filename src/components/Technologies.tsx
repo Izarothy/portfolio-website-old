@@ -30,7 +30,7 @@ export const Technologies = forwardRef((props, ref: RefT) => (
       >
         extension list
       </a>
-      ), with Ayu Blue as the color theme.asddasdfgh
+      ), with Ayu Blue as the color theme.
     </p>
   </section>
 ));
