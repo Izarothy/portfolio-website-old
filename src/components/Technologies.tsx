@@ -21,16 +21,5 @@ export const Technologies = forwardRef((props, ref: RefT) => (
         <TechIcon key={tech} name={tech} />
       ))}
     </div>
-    <p className="mt-8">
-      My OS is Windows 11, although I really like Linux distros. Visual Studio
-      Code is my code editor of choice (
-      <a
-        className="cursor-pointer text-blue-400"
-        href="https://pastebin.com/CPSGkdqr"
-      >
-        extension list
-      </a>
-      ), with "An Old Hope" as my preferred color theme.
-    </p>
   </section>
 ));
